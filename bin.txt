@@ -1,0 +1,15 @@
+SETUP"Printing,Media,Start Adjust,-136"
+SETUP"Printing,Media,Stop Adjust,0"
+SETUP"Printing,Print Quality,Print Speed,75"
+SETUP"Printing,Print Quality,Darkness,80"
+SETUP"Printing,Print Area,Media Width,812"
+SYSVAR(57)=0
+NASC 8
+CLL
+qXPos% = 5
+OPTIMIZE "BATCH" ON
+PP234+qXPos%,574:AN7:BARSET "QRCODE",1,1,15,2,1
+PB "[bin_name]"
+PP152+qXPos%,261:FT "Andale Mono":FONTSIZE 12:FONTSLANT 0
+PT "[bin_name]"
+PF1
